@@ -84,6 +84,7 @@ Tab:AddToggle({
     Callback = function(Value)
         CollectStatus = Value
         if Value then
+            resetCharacter()
             spawn(mainLoop)
         end
     end    
